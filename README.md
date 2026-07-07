@@ -38,24 +38,20 @@ Requisitos previos
 Dependencias
 Instala las librerías necesarias con:
 
---------------
-pip install PyQt6 pymongo
---------------
-Clonar el repositorio
---------------
-git clone https://github.com/MikaGhostty/ComercioTech
-cd ComercioTech
---------------
+-pip install PyQt6 pymongo
+-Clonar el repositorio
+-git clone https://github.com/MikaGhostty/ComercioTech
+-cd ComercioTech
 
 Configuración
 1. Edita el archivo `connection.py` para apuntar a tu base de datos MongoDB.  
    Ejemplo para local:
---------------
+
    from pymongo import MongoClient
    def get_db():
        client = MongoClient("mongodb://localhost:27017/")
        return client["Comercio"]
---------------
+
 
 2. Asegúrate de tener las colecciones `clientes`, `pedidos` y `productos` creadas en la base de datos.
 

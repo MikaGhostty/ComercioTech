@@ -1,6 +1,5 @@
 # ComercioTech
 App para Evaluacion de Base de Datos No Estructurados 
-Aquí tienes un resumen claro y atractivo para tu **README de GitHub** sobre la app **ComercioTech**:
 
 "ComercioTech"
 
@@ -28,3 +27,41 @@ Estructura de la base de datos
 
 Objetivo
 ComercioTech busca ser un prototipo funcional y escalable para la gestión de datos en un sistema de ventas, integrando buenas prácticas de modelado, conexión segura y documentación clara para proyectos académicos y profesionales.  
+
+## Instalación y ejecución
+
+Requisitos previos
+- **Python 3.10+** (idealmente 3.11).  
+- **MongoDB** instalado localmente o en la nube (ej. MongoDB Atlas).  
+- Conexión configurada en `connection.py` para tu base de datos.  
+
+Dependencias
+Instala las librerías necesarias con:
+
+--------------
+pip install PyQt6 pymongo
+--------------
+Clonar el repositorio
+--------------
+git clone https://github.com/tuusuario/ComercioTech.git
+cd ComercioTech
+--------------
+
+Configuración
+1. Edita el archivo `connection.py` para apuntar a tu base de datos MongoDB.  
+   Ejemplo para local:
+--------------
+   from pymongo import MongoClient
+   def get_db():
+       client = MongoClient("mongodb://localhost:27017/")
+       return client["Comercio"]
+--------------
+
+2. Asegúrate de tener las colecciones `clientes`, `pedidos` y `productos` creadas en la base de datos.
+
+Ejecución
+Inicia la aplicación con:
+
+python app.py
+
+La interfaz gráfica se abrirá mostrando el menú principal de **ComercioTech**, desde donde podrás realizar operaciones CRUD sobre clientes, pedidos y productos.

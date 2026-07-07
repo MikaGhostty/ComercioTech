@@ -43,7 +43,7 @@ pip install PyQt6 pymongo
 --------------
 Clonar el repositorio
 --------------
-git clone https://github.com/tuusuario/ComercioTech.git
+git clone https://github.com/MikaGhostty/ComercioTech
 cd ComercioTech
 --------------
 
@@ -61,7 +61,7 @@ Configuración
 
 Ejecución
 Inicia la aplicación con:
-
+--------------
 python app.py
-
+--------------
 La interfaz gráfica se abrirá mostrando el menú principal de **ComercioTech**, desde donde podrás realizar operaciones CRUD sobre clientes, pedidos y productos.
